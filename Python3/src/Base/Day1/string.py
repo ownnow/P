@@ -19,3 +19,40 @@ print(values,'\n',delimiters)
 # Reform the line using the same delimiters
 print(''.join(v+d for v,d in zip(values,delimiters)))
 print(re.split(r'(?:,|;|\s)\*s', line))
+print('****'*20)
+filename = 'spam.txt'
+print(filename.endswith('.txt'),'\n',filename.startswith('file:'))
+url = 'http://www.baidu.com'
+print(url.startswith('http:'))
+import os
+print(os.chdir(r'd:/test/file/'))
+print(os.getcwd())
+filenames = os.listdir()
+print(filenames)
+print('@@@@@@@@@@@'*5)
+print([name for name in filenames if name.endswith(('.c','.h','.txt'))])
+#如果iterable的任何元素不为0、''、False,all(iterable)返回True。
+#如果iterable为空，返回False
+print(any(name.endswith('.py') for name in filenames))
+print('---------'*5)
+choices = ['http:','ftp:']
+url = 'http://www.python.org'
+# 这个方法中必须要输入一个元组作为参数。如果你恰巧有一个list 或
+# 者set 类型的选择项，要确保传递参数前先调用tuple() 将其转换为元组类型
+print(url.startswith(tuple(choices)))
+stext ='spam.txt'
+print(stext[-4:] == '.txt')
+print(url[:5] == 'http:' or url[:6]=='https:' or url[:4] == 'ftp:')
+print('@@@@@@@'*10)
+import re
+res = re.match('http:|https:|ftp:', url)
+print(res)
+
+
+
+
+
+
+
+
+
