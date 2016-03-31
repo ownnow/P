@@ -73,6 +73,11 @@ parts = ['IS','Chicago','Not','Chicago?']
 print(' '.join(parts))
 print(','.join(parts))
 print(''.join(parts))
+a = 'Is Chicago'
+b = 'Not Chicago?'
+print(a+' '+b)
+print('{} {}'.format(a,b))
+print(a,b,sep=':')
 
 data = ['ACME',50,91.1]
 print(','.join(str(d) for d in data))
