@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
-encoding//src/Base/Day1/str_bytes.py=utf-8
-encoding//src/Base/Day1/str_delete.py=utf-8
-encoding//src/Base/Day1/str_tokens.py=utf-8
-encoding//src/Base/Day1/str_var.py=utf-8
-encoding//src/Base/Day1/strings.py=utf-8
+encoding//src/Base/Day1_Str_File/str_bytes.py=utf-8
+encoding//src/Base/Day1_Str_File/str_delete.py=utf-8
+encoding//src/Base/Day1_Str_File/str_tokens.py=utf-8
+encoding//src/Base/Day1_Str_File/str_var.py=utf-8
+encoding//src/Base/Day1_Str_File/strings.py=utf-8
