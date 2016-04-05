@@ -74,18 +74,14 @@ for name,val in zip(headers,values):
     print(name,'=',val)
 print(list(zip(xpts,ypts,zpts)))
 print(list(zip(xpts,ypts)))
-#不同集合上元素的迭代，在多个对象执行相同的操作，但是这些对象在不同的容器中，在代码不失可读性的情况下避免写重复循环。itertools.chain()方法可以用来简化这个任务。它接受一个可迭代对象列表作为输入，并返回一个迭代器，有效的屏蔽掉在多个容器中的细节，代码如下
+#不同集合上元素的迭代，在多个对象执行相同的操作，但是这些对象在不同的容器中，在代码不失可读性的情况下避免写重复循环。itertools.chain()方法可以用来简化这个任务。它接受一个可迭代对象列表作为输入，并返回一个迭代器，有效的屏蔽掉在多个容器中的细节，这种方式要比先将序列合并再迭代要高效的多.代码如下
 from itertools import chain
 a = [1,2,3,4]
 b = ['x','y','z']
 for x in chain(a,b):
     print(x)
-#使用chain()的一个常见场景是当你相对不同对象的集合中所有元素执行
-
-
-
-
-
-
-
-
+#使用chain()的一个常见场景是当你相对不同对象的集合中所有元素执行某些操作的时候
+active_items = set()
+inactive_items = set()
+for item in chain(active_items,inactive_items):
+    print('Process item')
